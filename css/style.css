@@ -10,8 +10,25 @@
   color: #e6e4e4;
 }
 
+.description-projet {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  color: #e6e4e4;
+  padding: 0.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.fond-projet {
+  background-color: #575757;
+  border-radius: 0em 0em 1em 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .rounded {
-  background-color: blanchedalmond;
   border-radius: 1em;
   margin: 1em;
 }
@@ -20,8 +37,35 @@
   color: #e6e4e4;
 }
 
+.img-mockup {
+  width: 100%;
+  border-radius: 1em 1em 0em 0em;
+}
+
 * {
   margin: 0;
+}
+
+.text-bloc-transparent {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-bloc-transparent .presentation--text {
+  width: 70%;
+  margin: auto;
+  padding: 2rem;
+  -webkit-backdrop-filter: blur(8px) brightness(1.2);
+          backdrop-filter: blur(8px) brightness(1.2);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.link-site {
+  background-color: #575757;
 }
 
 body {
@@ -57,6 +101,10 @@ header {
 }
 .navbar .nav-link:hover {
   transform: scale(1.1);
+}
+
+.logo-social-network {
+  width: 40px;
 }
 
 #back {
@@ -104,14 +152,19 @@ header {
 }
 
 section {
-  height: 50vh;
   width: 80vw;
   margin: auto;
-  border-radius: 1em;
 }
 
-footer {
-  text-align: center;
+#section-site {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.cadre-site {
+  width: 20vw;
 }
 
 .carousel-cell {
