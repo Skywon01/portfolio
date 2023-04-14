@@ -29,7 +29,6 @@ $global-color: #575757
     margin-right: .3rem
 
 .fond-projet
-    background-color: $global-color
     border-radius: 0em 0em 1em 1em
 
 .text-center
@@ -47,21 +46,26 @@ $global-color: #575757
     border-radius: 1em 1em 0em 0em
 * 
     margin: 0
-
+    scrollbar-width: none
+    ::-webkit-scrollbar
+        display: none
+        
 .text-bloc-transparent
     width: 80vw
     margin: auto 
     display: flex
     align-items: center
     justify-content: center
-    .presentation--text
-        width: 70%
-        margin: auto
-        padding: 2rem
-        backdrop-filter: blur(8px) brightness(1.2)
-        text-shadow: 0 0 5px rgba(0,0,0,0.6)
-        box-shadow: 0 0 5px rgba(0,0,0,0.5)
-        border-radius: 5px
+    
+.presentation--text
+    width: 70%
+    margin: auto
+    padding: 2rem
+    background-color: rgba(0, 0, 0, 0.6)
+    backdrop-filter: blur(8px) brightness(1.2)
+    text-shadow: 0 0 5px rgba(0,0,0,0.6)
+    box-shadow: 0 0 5px rgba(0,0,0,0.5)
+    border-radius: 5px
     
 .link-site
         background-color: $global-color
@@ -75,13 +79,15 @@ header
     width: 100%
     text-align: center
     z-index: 5
-
-.header__h1
-    font-size: 4rem
-    padding-top: 3vh
-    text-transform: uppercase
-    text-decoration: overline underline
-
+    .header__h1
+        font-size: 4rem
+        padding-top: 3vh
+        text-transform: uppercase
+        text-decoration: overline underline
+        white-space: nowrap
+        @media ( max-width: 499px )
+            width: 100%
+            overflow: hidden
 .navbar 
     display: flex
     justify-content: space-around
@@ -113,6 +119,8 @@ header
     display: flex
     align-items: center
     justify-content: center
+    @media (max-width: 499px) 
+        flex-direction: column-reverse
     #presentation--text
         width: 70%
         margin: auto
@@ -120,7 +128,8 @@ header
         backdrop-filter: blur(8px) brightness(1.2)
         text-shadow: 0 0 5px rgba(0,0,0,0.6)
         box-shadow: 0 0 5px rgba(0,0,0,0.5)
-        border-radius: 5px
+        border-radius: 5px            
+        
           
 #profil 
     margin-left: 5vw
@@ -128,7 +137,11 @@ header
     border-radius: 50em
     box-shadow: 10px 5px 5px #575757
     +scaling(1.1, .4s ease-in-out)
-
+    @media (max-width:499px) 
+        margin: 0vw
+        margin-bottom: 5vh
+        
+    
 section 
     width: 80vw
     margin: auto
@@ -138,9 +151,21 @@ section
     display: flex
     justify-content: center
     margin: 2rem
+    @media (max-width: 599px) 
+        flex-direction: column
+        align-items: center
+        
+    
 
 .cadre-site
     width: 20vw
+    background-color: $global-color
+    @media (max-width:499px) 
+        width: 90vw
+
+.main-carousel
+    width: 70vw
+    margin: auto
 
 .carousel-cell
     width: 100%
