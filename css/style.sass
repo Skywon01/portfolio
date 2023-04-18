@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap')
 
-
 // Variables de couleurs    
 $text-color: #e6e4e4
 $global-color: #575757
@@ -44,6 +43,7 @@ $global-color: #575757
 .img-mockup
     width: 100%
     border-radius: 1em 1em 0em 0em
+
 * 
     margin: 0
     scrollbar-width: none
@@ -70,11 +70,11 @@ $global-color: #575757
 .link-site
         background-color: $global-color
 
-
 body
     background-color: $global-color
     background-image: url("../media/misc/desk-gfd5f226c0_1920.jpg")
     background-attachment: fixed
+
 header 
     width: 100%
     text-align: center
@@ -86,8 +86,9 @@ header
         text-decoration: overline underline
         white-space: nowrap
         @media ( max-width: 499px )
-            width: 100%
+            font-size: 3rem 
             overflow: hidden
+
 .navbar 
     display: flex
     justify-content: space-around
@@ -99,8 +100,16 @@ header
         padding-bottom: 2vh
         +scaling(1.1, .4s ease-in-out)
 
+.network
+    margin: auto
+    display: flex
+    justify-content: space-around
+    width: 20vw
+    @media ( max-width: 499px) 
+        width: 100vw    
+    
 .logo-social-network
-    width: 40px
+    width: 50px
 
 #back 
     padding-right: 2vw
@@ -130,7 +139,6 @@ header
         box-shadow: 0 0 5px rgba(0,0,0,0.5)
         border-radius: 5px            
         
-          
 #profil 
     margin-left: 5vw
     height:40vh
@@ -140,8 +148,9 @@ header
     @media (max-width:499px) 
         margin: 0vw
         margin-bottom: 5vh
-        
-    
+
+#diplomas
+    margin-top: 10vh        
 section 
     width: 80vw
     margin: auto
@@ -155,8 +164,6 @@ section
         flex-direction: column
         align-items: center
         
-    
-
 .cadre-site
     width: 20vw
     background-color: $global-color

@@ -93,7 +93,7 @@ header .header__h1 {
 }
 @media (max-width: 499px) {
   header .header__h1 {
-    width: 100%;
+    font-size: 3rem;
     overflow: hidden;
   }
 }
@@ -114,8 +114,20 @@ header .header__h1 {
   transform: scale(1.1);
 }
 
+.network {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+}
+@media (max-width: 499px) {
+  .network {
+    width: 100vw;
+  }
+}
+
 .logo-social-network {
-  width: 40px;
+  width: 50px;
 }
 
 #back {
@@ -171,6 +183,10 @@ header .header__h1 {
     margin: 0vw;
     margin-bottom: 5vh;
   }
+}
+
+#diplomas {
+  margin-top: 10vh;
 }
 
 section {
