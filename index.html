@@ -1,172 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Mon CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="media/x-icon">
+        <!-- Flickity -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- Mon Javascript -->
+        <script src="javascript/script.js"></script>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>$(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                scrollTop: target.offset().top
+                }, 1500,  'swing', function () {
+            window.location.hash = target;});
+            }
+            });
+        });</script>
+        <title>Accueil</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Mon CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="media/x-icon">
-    <!-- Flickity -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <body>
     
-    <!-- Mon Javascript -->
-    <script src="javascript/script.js"></script>
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>$(document).ready(function() {
-        $('a[href^="#"]').on('click', function(event) {
-          var target = $(this.getAttribute('href'));
-          if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-              scrollTop: target.offset().top
-            }, 1500,  'swing', function () {
-        window.location.hash = target;});
-          }
-        });
-      });</script>
-      <!-- Carrousel flickity -->
-      <script>$('.main-carousel').flickity({
-        // options
-        cellAlign: 'left',
-        contain: true
-      });</script>
-    <title>Accueil</title>
-</head>
+        <header>
+            
+            <h1 id="name" class="title-police header__h1 text-color">- Yann Doublet -</h1>
+            
+            <nav class="navbar">
+                <!-- Ici on va linker vers des ancres sur le site -->
+                <a href="#about-me" class="title-police nav-link hover-scale transition-scale text-color">A propos de moi</a>
+                <!-- <a href="#skils" class="title-police nav-link hover-scale transition-scale text-color">Compétences</a> -->
+                <a href="#diplomas" class="title-police nav-link hover-scale transition-scale text-color">Formations</a>
+                <a href="#experience" class="title-police nav-link hover-scale transition-scale text-color">Experience</a>
+            </nav>   
 
-<body>
+            <div class="network">
+                <a href="https://www.linkedin.com/in/yann-doublet-47a064152"><img src="media/logos/linkedin.svg" alt="Logo linkedin" class="logo-social-network"></a>    
+                <a href="https://github.com/Skywon01"><img src="media/logos/square-github.svg" alt="Logo github" class="logo-social-network"></a> 
+            </div>
+        </header>
+
+        <main>
+
+            <!-- <a href="#name" id="back" class="title hover-scale transition-scale text-color text-police">Retour</a> -->
+
+            <section id="about-me">
+                <article id="presentation">
+                    <div class="presentation--text">
+                        <p class="text-police">
+                            Après cinq ans de réussite dans le domaine de la maintenance industrielle suite à l'obtention de mon BTS, j'ai décidé de me lancer dans une passion qui me suit depuis toujours : le web. 
+                            <!-- Après cinq ans de réussite dans le domaine de la maintenance industrielle suite à
+                            l'obtention de mon BTS, j'ai décidé de me lancer dans une passion qui me suit depuis toujours : le
+                            web. Avec une formation solide en graphisme webdesigner et en développement web, je suis prêt à
+                            relever de nouveaux défis et à explorer de nouvelles opportunités dans le domaine passionnant du
+                            web. 
+                        J'ai une formation solide en graphisme webdesigner et en développement web.
+                        Je suis prêt à relever de nouveaux défis et à explorer de nouvelles opportunités dans le domaine passionnant du web.
+                        -->
+                        </p>
+                    </div>
+                    <div>
+                        <img id="profil" src="media/photo-de-profil.webp" alt="photo de profil">
+                    </div>   
+                </article>
+            </section>
+
+            <section id="diplomas">
+                <article class="rounded text-police text-bloc-transparent">
+                    <div class="presentation--text">
+                        <h3>Développeur web, web mobile</h3>
+                        <p>Formation effectuée à Evry chez Philiance en 2022</p>
+                        <h3>Infographiste webdesigner</h3>
+                        <p>Formation effectuée à Evry chez Philiance en 2021-2022</p>
+                        <h3>Technicien de maintenance industrielle</h3>
+                        <p>BTS au lycée Tesla (anciennement Kastler) à Dourdan en 2013</p>
+                    </div>
+                </article>
+            </section>
+            
+            <section id="experience">
+                <article class="rounded" id="section-site">
+                    <div class="cadre-site rounded text-center scale">
+                        <p>
+                            <a href="https://www.natation-eco.fr" class="link-site"><img src="media/misc/mockup_natation-eco.webp" alt="Logo natation-eco.fr" class="img-mockup"></a>
+                        </p>
+                        <div class="fond-projet">
+                            <p class="description-projet">
+                                Projet de site e-commerce sur le thème de la natation. 
+                            </p>
+                            <p class="description-projet">
+                                Ce site a été codé avec du HTML, du CSS personnalisé et Bootstrap 5, PHP avec le framework Symfony, une base de données SQL gérée avec Doctrine.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cadre-site rounded text-center scale">
+                        <p>
+                            <a href="https://www.legprint.fr" class="link-site"><img src="media/misc/mockup_legprint.webp" alt="Logo legprint.fr" class="img-mockup"></a>
+                        </p>             
+                        <div class="fond-projet">
+                            <p class="description-projet"> Projet de site e-commerce sur le thème de l'impression 3D de coque de prothèses de jambe </p>
+                            <p class="description-projet">
+                                Ce site a été construit avec WordPress, j'ai utilisé le constructeur de thème Elementor Pro et du CSS personnalisé.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
    
-    <header>
-        
-        <h1 id="name" class="title-police header__h1 text-color">- Yann Doublet -</h1>
-        
-        <nav class="navbar">
-            <!-- Ici on va linker vers des ancres sur le site -->
-            <a href="#about-me" class="title-police nav-link hover-scale transition-scale text-color">A propos de moi</a>
-            <!-- <a href="#skils" class="title-police nav-link hover-scale transition-scale text-color">Compétences</a> -->
-            <a href="#diplomas" class="title-police nav-link hover-scale transition-scale text-color">Formations</a>
-            <a href="#experience" class="title-police nav-link hover-scale transition-scale text-color">Experience</a>
-        </nav>   
-
-        <div class="network">
-            <a href="https://www.linkedin.com/in/yann-doublet-47a064152"><img src="media/logos/linkedin.svg" alt="Logo linkedin" class="logo-social-network"></a>    
-            <a href="https://github.com/Skywon01"><img src="media/logos/square-github.svg" alt="Logo github" class="logo-social-network"></a> 
-        </div>
-    </header>
-
-    <main>
-
-        <!-- <a href="#name" id="back" class="title hover-scale transition-scale text-color text-police">Retour</a> -->
-
-        <section id="about-me">
-            <article id="presentation">
-                <div class="presentation--text">
-                    <p class="text-police">
-                        Après cinq ans de réussite dans le domaine de la maintenance industrielle suite à l'obtention de mon BTS, j'ai décidé de me lancer dans une passion qui me suit depuis toujours : le web. 
-                        <!-- Après cinq ans de réussite dans le domaine de la maintenance industrielle suite à
-                        l'obtention de mon BTS, j'ai décidé de me lancer dans une passion qui me suit depuis toujours : le
-                        web. Avec une formation solide en graphisme webdesigner et en développement web, je suis prêt à
-                        relever de nouveaux défis et à explorer de nouvelles opportunités dans le domaine passionnant du
-                        web. 
-                    J'ai une formation solide en graphisme webdesigner et en développement web.
-                    Je suis prêt à relever de nouveaux défis et à explorer de nouvelles opportunités dans le domaine passionnant du web.
-                    -->
-                    </p>
-                </div>
-                <div>
-                    <img id="profil" src="media/photo-de-profil.webp" alt="photo de profil">
-                </div>   
-            </article>
-        </section>
-
-        <!-- <section class="skills">
-            <h2 id="compétences" class="title-police text-color">Compétences</h2>
-            <article class="rounded text-police text-bloc-transparent">
-                <div class="presentation--text">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Sass</p>
-                    <p>Bootstrap</p>
-                    <p>PHP</p>
-                    <p>Symfony</p>
-                    <p>CSS</p>
-                </div>
-            </article>
-        </section> -->
-
-        <section id="diplomas">
-            <article class="rounded text-police text-bloc-transparent">
-                <div class="presentation--text">
-                    <h3>Développeur web, web mobile</h3>
-                    <p>Formation effectuée à Evry chez Philiance en 2022</p>
-                    <h3>Infographiste webdesigner</h3>
-                    <p>Formation effectuée à Evry chez Philiance en 2021-2022</p>
-                    <h3>Technicien de maintenance industrielle</h3>
-                    <p>BTS au lycée Tesla (anciennement Kastler) à Dourdan en 2013</p>
-                </div>
-            </article>
-        </section>
-        
-        <section id="experience">
-            <article class="rounded" id="section-site">
-                <div class="cadre-site rounded text-center">
-                    <p>
-                        <a href="https://www.natation-eco.fr" class="link-site"><img src="media/misc/mockup_natation-eco.webp" alt="Logo natation-eco.fr" class="img-mockup"></a>
-                    </p>
-                    <div class="fond-projet">
-                        <p class="description-projet">
-                            Projet de site e-commerce sur le thème de la natation. 
-                        </p>
-                        <p class="description-projet">
-                            Ce site a été codé avec du HTML, du CSS personnalisé et Bootstrap 5, PHP avec le framework Symfony, une base de données SQL gérée avec Doctrine.
-                        </p>
+            <section class="skills">
+                <article class="presentation--text">
+                    <div class="text-police">
+                        <h1>Compétences</h1>
+                        <p>PHP</p>
+                        <p>Symfony</p>
+                        <p>SQL</p>
+                        <p>PHP</p>
+                        <p>PHP</p>
+                        <p>PHP</p>
+                        <h2>Back</h2>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Sass</p>
+                        <p>Bootstrap</p>
+                        <h2>Front</h2>
+                        <h2>CMS</h2>
                     </div>
-                </div>
-                <div class="cadre-site rounded text-center">
-                    <p>
-                        <a href="https://www.legprint.fr" class="link-site"><img src="media/misc/mockup_legprint.webp" alt="Logo legprint.fr" class="img-mockup"></a>
-                    </p>             
-                    <div class="fond-projet">
-                        <p class="description-projet"> Projet de site e-commerce sur le thème de l'impression 3D de coque de prothèses de jambe </p>
-                        <p class="description-projet">
-                            Ce site a été construit avec WordPress, j'ai utilisé le constructeur de thème Elementor Pro et du CSS personnalisé.
-                        </p>
+                    </article>
+                <article class="img-cv test">
+                    <a href="media/misc/CV_web_yann_doublet_alternance.pdf" download>
+                        <img src="media/misc/CV_web_alternance.jpg" alt="Mon CV" class="CV scale">
+                    </a>
+                    <div>
+                        <a href="media/misc/CV_web_yann_doublet_alternance.pdf" download class="btn-telecharger">Télécharger mon CV</a>
                     </div>
-                </div>
-            </article>
-        </section>
-        <div>
-                <div class="main-carousel" data-flickity='{ "autoPlay": true, "wrapAround": true, "cellAlign": "center", "contain": true, "pageDots": false }'>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_01.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_02.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_03.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_04.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_05.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_06.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_07.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_08.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_09.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_10.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_11.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_12.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_13.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_14.webp" alt="" class="carousel-img"></div>
-                    <div class="carousel-cell"><img src="media/book/Book Yann Doublet_Page_15.webp" alt="" class="carousel-img"></div>
+                </article>
+            </section>
+            <!-- Carousel en jQuery -->
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.plugins.js"></script>
+            <script>
+                $(document).ready(function(){
+                var $carousel = $('.main-carousel').flickity({
+                    "autoPlay": true, "wrapAround": true, "cellAlign": "center", "contain": true, "pageDots": false, "lazyLoad": true
+                });
+                
+                $('lazy').Lazy({
+                    appendScroll: $carousel,
+                    effect: 'fadeIn',
+                    visibleOnly: true,
+                    onError: function(element) {
+                        console.log('error loading' + element.data('src'));
+                    }
+                })
+                });
+            </script>
+            <div>
+                    <div class="main-carousel">
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_01.webp" alt="Page book 1" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_02.webp" alt="Page book 2" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_03.webp" alt="Page book 3" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_04.webp" alt="Page book 4" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_05.webp" alt="Page book 5" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_06.webp" alt="Page book 6" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_07.webp" alt="Page book 7" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_08.webp" alt="Page book 8" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_09.webp" alt="Page book 9" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_10.webp" alt="Page book 10" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_11.webp" alt="Page book 11" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_12.webp" alt="Page book 12" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_13.webp" alt="Page book 13" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_14.webp" alt="Page book 14" class="carousel-img lazy"></div>
+                        <div class="carousel-cell"><img data-flickity-lazyload="media/book/Book Yann Doublet_Page_15.webp" alt="Page book 15" class="carousel-img lazy"></div>
 
-                </div>
-        </div>
-    </main>
+                    </div>
+            </div>
+        </main>
 
-    <footer>
-    
-        <h2 id="name_footer" class="title-police text-center">Yann Doublet</h2>
-        <img src="" alt="">
-    
-    </footer>
+        <footer>
+            <h2 id="name_footer" class="title-police text-center">Yann Doublet</h2>
+            <img src="" alt="">
+        </footer>
 
-</body>
-
+    </body>
 </html>

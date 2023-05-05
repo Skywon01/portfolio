@@ -27,6 +27,9 @@ $global-color: #575757
     margin-left: .3rem
     margin-right: .3rem
 
+.scale
+    +scaling(1.1, .4s ease-in-out)
+
 .fond-projet
     border-radius: 0em 0em 1em 1em
 
@@ -39,10 +42,6 @@ $global-color: #575757
 
 .text-color
     color: $text-color
-
-.img-mockup
-    width: 100%
-    border-radius: 1em 1em 0em 0em
 
 * 
     margin: 0
@@ -72,7 +71,7 @@ $global-color: #575757
 
 body
     background-color: $global-color
-    background-image: url("../media/misc/desk-gfd5f226c0_1920.jpg")
+    background-image: url("../media/misc/desk-gfd5f226c0_1920.webp")
     background-attachment: fixed
 
 header 
@@ -170,6 +169,47 @@ section
     @media (max-width:499px) 
         width: 90vw
 
+.img-mockup
+    width: 100%
+    border-radius: 1em 1em 0em 0em
+
+.skills
+    margin: auto
+    display: flex
+    article
+        margin: auto
+
+
+.btn-telecharger 
+    margin:1rem
+    display: inline-block
+    background-color: #e74c3c
+    border: 1px solid #4CAF50
+    color: #fff
+    text-decoration: none
+    font-size: 18px
+    font-weight: bold
+    padding: 10px 20px
+    border-radius: 5px
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2)
+    text-transform: uppercase
+    font-family: 'Helvetica Neue', sans-serif
+    visibility: collapse
+    @media (max-width: 599px) 
+        visibility: visible    
+        
+
+.btn-telecharger:hover 
+    background-color: #c0392b
+
+.img-cv
+    display: flex
+    flex-direction: column
+.CV
+    width: 30vw
+
+    // Carousel Flickity
+
 .main-carousel
     width: 70vw
     margin: auto
@@ -180,6 +220,13 @@ section
 
 .carousel-img
     width: 100%
+    opacity: 0
+    -webkit-transition: opacity 1.5s
+    transition: opacity 1.5s
+
+.carousel-img.flickity-lazyloaded,
+.carousel-img.flickity-lazyerror
+    opacity: 1
 
 //Code pour avoir un scroll doux, fonctionnne sans jquery mais moins paramétrable
 // html
