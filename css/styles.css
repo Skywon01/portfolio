@@ -1,0 +1,223 @@
+@import "styles/header.css";
+@import "styles/main.css";
+@import "styles/footer.css";
+@import "styles/global.css";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+.title-police {
+    font-family: "Fjalla One", sans-serif;
+}
+
+.text-police {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.5rem;
+    color: #e6e4e4;
+}
+
+.description-projet {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    color: #e6e4e4;
+    padding: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.scale {
+    transition: 0.4s ease-in-out;
+}
+.scale:hover {
+    transform: scale(1.1);
+}
+
+.fond-projet {
+    border-radius: 0 0 1em 1em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.text-color {
+    color: #e6e4e4;
+}
+
+* {
+    margin: 0;
+    scrollbar-width: none;
+}
+* ::-webkit-scrollbar {
+    display: none;
+}
+
+.text-bloc-transparent {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation--text {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.link-site {
+    background-color: #575757;
+}
+
+body {
+    background-color: #575757;
+    background-image: url("../media/misc/desk-gfd5f226c0_1920.webp");
+    background-attachment: fixed;
+}
+
+
+#back {
+    padding-right: 2vw;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    position: fixed;
+    text-decoration: none;
+    z-index: 5;
+    transition: 0.4s ease-in-out;
+}
+#back:hover {
+    transform: scale(1.1);
+}
+
+#presentation {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 499px) {
+    #presentation {
+        flex-direction: column-reverse;
+    }
+}
+#presentation #presentation--text {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(8px) brightness(1.2);
+    backdrop-filter: blur(8px) brightness(1.2);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+#profil {
+    background: url('media/Yann-DOUBLET.webp') no-repeat;
+    background-size: cover;
+    margin-left: 5vw;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    box-shadow: 10px 5px 5px #575757;
+    transition: 0.4s ease-in-out;
+}
+#profil:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 499px) {
+    #profil {
+        margin: 0 0 5vh;
+    }
+}
+
+#diplomas {
+    margin-top: 10vh;
+}
+
+section {
+    width: 80vw;
+    margin: auto;
+}
+
+#section-site {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 599px) {
+    #section-site {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cadre-site {
+    width: 20vw;
+    background-color: #575757;
+}
+@media (max-width: 499px) {
+    .cadre-site {
+        width: 90vw;
+    }
+}
+
+.img-mockup {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.skills {
+    margin: auto;
+    display: flex;
+}
+.skills article {
+    margin: auto;
+}
+
+.btn-telecharger {
+    margin: 1rem;
+    display: inline-block;
+    background-color: #e74c3c;
+    border: 1px solid #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", sans-serif;
+    visibility: collapse;
+}
+@media (max-width: 599px) {
+    .btn-telecharger {
+        visibility: visible;
+    }
+}
+
+.btn-telecharger:hover {
+    background-color: #c0392b;
+}
+
+.img-cv {
+    display: flex;
+    flex-direction: column;
+}
+
+.CV {
+    width: 30vw;
+}
