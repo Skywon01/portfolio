@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_downward" />
     <!-- Mon Javascript -->
     <script src="javascript/script.js"></script>
     <!-- Jquery -->
@@ -27,45 +28,64 @@
             }
         });
     });</script>
-    <title>Accueil</title>
+    <title>Portfolio de Yann Doublet | Concepteur développeur d'application</title>
 </head>
 
 <body>
 <!-- Header -->
-<header>
-
+<header class="position-fixed top-0">
 
 
     <nav class="navbar d-flex justify-content-evenly">
         <h1 id="name" class="title-police header__h1 text-color">- Yann Doublet -</h1>
         <!-- Ici on va linker vers des ancres sur le site -->
         <a href="#about-me" class="title-police nav-link hover-scale transition-scale text-color">A propos de moi</a>
-         <a href="#skills" class="title-police nav-link hover-scale transition-scale text-color">Compétences</a>
+        <a href="#skills" class="title-police nav-link hover-scale transition-scale text-color">Compétences</a>
         <a href="#diplomas" class="title-police nav-link hover-scale transition-scale text-color">Formations</a>
         <a href="#experience" class="title-police nav-link hover-scale transition-scale text-color">Experience</a>
     </nav>
 
-    <div class="network">
-        <a href="https://www.linkedin.com/in/yann-doublet-47a064152"><img src="media/logos/linkedin.svg"
-                                                                          alt="Logo linkedin"
-                                                                          class="logo-social-network"></a>
-        <a href="https://github.com/Skywon01"><img src="media/logos/square-github.svg" alt="Logo github"
-                                                   class="logo-social-network"></a>
-    </div>
+    <!--    <div class="network">-->
+    <!--        <a href="https://www.linkedin.com/in/yann-doublet-47a064152"><img src="media/logos/linkedin.svg"-->
+    <!--                                                                          alt="Logo linkedin"-->
+    <!--                                                                          class="logo-social-network"></a>-->
+    <!--        <a href="https://github.com/Skywon01"><img src="media/logos/square-github.svg" alt="Logo github"-->
+    <!--                                                   class="logo-social-network"></a>-->
+    <!--    </div>-->
 </header>
 
 <main>
 
-    <a href="#name" id="back" class="title hover-scale transition-scale text-color text-police">Retour</a>
+    <a href="#name" id="back"
+       class="title hover-scale transition-scale text-color text-police position-fixed">Retour</a>
 
-    <section id="about-me">
-        <article id="presentation">
+    <section style="height: 100vh;">
+        <div class="position-absolute top-50 start-50 translate-middle">
+
+            <h1 id="name-home" class="text-center text-white">Yann Doublet</h1>
+            <h2 id="job-home" class="text-center mt-5 text-white">Concepteur développeur d'application</h2>
+            <a href="#about-me" class="d-flex m-auto justify-content-around arrow-container">
+
+            <span class="material-symbols-outlined text-white arrow mt-5 pt-4">
+arrow_downward
+</span>
+            </a>
+        </div>
+    </section>
+    <section id="about-me" class="w-100 bg-white p-5">
+        <h2 class="text-center about-me">A propos de moi</h2>
+        <article id="presentation" class="d-flex mt-3 mb-3  m-auto justify-content-center w-75">
             <div class="presentation--text">
                 <p class="text-police">
-                    Après cinq années dans la maintenance industrielle, où j’ai exercé la gestion de projets techniques et développé une forte capacité à résoudre des problèmes, j’ai décidé de me lancer pleinement dans le développement web, une passion de longue date. Diplômé en Conception et Développement d’Applications, je recherche un poste de développeur fullstack. Mon parcours combine une formation en graphisme webdesign et en développement, ainsi qu'une expérience pratique en gestion de projet, me permettant d’apporter une approche structurée et créative aux projets web.
+                    Après cinq années dans la maintenance industrielle, où j’ai exercé la gestion de projets techniques
+                    et développé une forte capacité à résoudre des problèmes, j’ai décidé de me lancer pleinement dans
+                    le développement web, une passion de longue date. Diplômé en Conception et Développement
+                    d’Applications, je recherche un poste de développeur fullstack. Mon parcours combine une formation
+                    en graphisme webdesign et en développement, ainsi qu'une expérience pratique en gestion de projet,
+                    me permettant d’apporter une approche structurée et créative aux projets web.
                 </p>
             </div>
-            <div id="profil" style="background-image: url('media/Yann-DOUBLET.webp');">
+            <div id="profil" class="mb-3 mt-3 me-5" style="background-image: url('media/Yann-DOUBLET.webp');">
 
             </div>
         </article>
@@ -138,13 +158,13 @@
         <article class="presentation--text">
             <div class="text-police">
                 <h2 class="mb-3"><u>Compétences transversales</u></h2>
-                <h3 class="ms-3"><u> Conception et modélisation :  </u></h3>
+                <h3 class="ms-3"><u> Conception et modélisation : </u></h3>
                 <div class="ms-5">
 
-                <p>- Modélisation de base de données (MCD, MLD, MPD), avec Merise.</p>
-                <p>- Maquettage et prototypage avec Figma ou Adobe XD.</p>
-                <p>- Wireframe et zoning pour des interfaces utilisateur efficaces.</p>
-                <p>- Rédaction de cahier des charges et spécifications techniques.</p>
+                    <p>- Modélisation de base de données (MCD, MLD, MPD), avec Merise.</p>
+                    <p>- Maquettage et prototypage avec Figma ou Adobe XD.</p>
+                    <p>- Wireframe et zoning pour des interfaces utilisateur efficaces.</p>
+                    <p>- Rédaction de cahier des charges et spécifications techniques.</p>
                 </div>
                 <h3 class="ms-3"><u>Gestion de projet</u></h3>
                 <div class="ms-5">

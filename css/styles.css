@@ -10,8 +10,8 @@
 
 .text-police {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
-    color: #e6e4e4;
+    font-size: 1.1rem;
+    color: #7c7878;
 }
 
 .description-projet {
@@ -38,13 +38,9 @@
     text-align: center;
 }
 
-.rounded {
-    border-radius: 1em;
-    margin: 1em;
-}
 
 .text-color {
-    color: #e6e4e4;
+    color: #ffffff;
 }
 
 * {
@@ -63,17 +59,7 @@
     justify-content: center;
 }
 
-.presentation--text {
-    width: 70%;
-    margin: auto;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    -webkit-backdrop-filter: blur(8px) brightness(1.2);
-    backdrop-filter: blur(8px) brightness(1.2);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
+
 
 .link-site {
     background-color: #575757;
@@ -92,7 +78,7 @@ body {
     position: absolute;
     bottom: 5vh;
     right: 5vw;
-    position: fixed;
+
     text-decoration: none;
     z-index: 5;
     transition: 0.4s ease-in-out;
@@ -101,68 +87,27 @@ body {
     transform: scale(1.1);
 }
 
-#presentation {
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@media (max-width: 499px) {
-    #presentation {
-        flex-direction: column-reverse;
-    }
-}
-#presentation #presentation--text {
-    width: 70%;
-    margin: auto;
-    padding: 2rem;
-    -webkit-backdrop-filter: blur(8px) brightness(1.2);
-    backdrop-filter: blur(8px) brightness(1.2);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-
-#profil {
-    background: url('media/Yann-DOUBLET.webp') no-repeat;
-    background-size: cover;
-    margin-left: 5vw;
-    height: 350px;
-    width: 350px;
-    border-radius: 100%;
-    box-shadow: 10px 5px 5px #575757;
-    transition: 0.4s ease-in-out;
-}
-#profil:hover {
-    transform: scale(1.1);
-}
-@media (max-width: 499px) {
-    #profil {
-        margin: 0 0 5vh;
-    }
-}
 
 #diplomas {
     margin-top: 10vh;
 }
 
-section {
-    width: 80vw;
-    margin: auto;
-}
+/*section {*/
+/*    width: 80vw;*/
+/*    margin: auto;*/
+/*}*/
 
-#section-site {
-    margin: 2rem;
-    display: flex;
-    justify-content: center;
-}
-@media (max-width: 599px) {
-    #section-site {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/*#section-site {*/
+/*    margin: 2rem;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+/*@media (max-width: 599px) {*/
+/*    #section-site {*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
+/*}*/
 
 .cadre-site {
     width: 20vw;
