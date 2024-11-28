@@ -40,9 +40,9 @@
         <h1 id="name" class="title-police header__h1 text-color">- Yann Doublet -</h1>
         <!-- Ici on va linker vers des ancres sur le site -->
         <a href="#about-me" class="title-police nav-link hover-scale transition-scale text-white">A propos de moi</a>
-        <a href="#skills" class="title-police nav-link hover-scale transition-scale text-color text-white">Compétences</a>
         <a href="#diplomas" class="title-police nav-link hover-scale transition-scale text-color text-white">Formations</a>
-        <a href="#experience" class="title-police nav-link hover-scale transition-scale text-color text-white">Experience</a>
+        <a href="#skills" class="title-police nav-link hover-scale transition-scale text-color text-white">Compétences</a>
+        <a href="#experience" class="title-police nav-link hover-scale transition-scale text-color text-white">Mes projets</a>
     </nav>
 
     <!--    <div class="network">-->
@@ -90,7 +90,7 @@ arrow_downward
             </div>
         </article>
     </section>
-    <h1 class="text-center text-white mt-5 mb-5">En construction</h1>
+<!--    <h1 class="text-center text-white mt-5 mb-5">En construction</h1>-->
 
     <section id="diplomas" class="w-100 bg-white p-5 mb-5">
         <h2 class="text-center about-me">Diplômes et formations</h2>
@@ -106,6 +106,48 @@ arrow_downward
                 <p>BTS au lycée Tesla (anciennement Kastler) à Dourdan en 2013</p>
             </div>
         </article>
+    </section>
+
+
+
+    <section id="skills" class=" w-100 bg-white p-5 mb-5">
+        <h2 class="text-center about-me mb-5">Mes compétences</h2>
+        <div class="d-flex justify-content-around w-75 m-auto">
+
+        <article class="presentation--text">
+            <div class="text-police">
+                <h2 class="mb-3"><u>Compétences transversales</u></h2>
+                <h3 class="ms-3"><u> Conception et modélisation : </u></h3>
+                <div class="ms-5">
+
+                    <p>- Modélisation de base de données (MCD, MLD, MPD), avec Merise.</p>
+                    <p>- Maquettage et prototypage avec Figma ou Adobe XD.</p>
+                    <p>- Wireframe et zoning pour des interfaces utilisateur efficaces.</p>
+                    <p>- Rédaction de cahier des charges et spécifications techniques.</p>
+                </div>
+                <h3 class="ms-3"><u>Gestion de projet</u></h3>
+                <div class="ms-5">
+                    <p>- Utilisation d'outils comme Trello pour suivre les tâches</p>
+                    <p>- Méthodes Agiles pour le développement collaboratif</p>
+                </div>
+                <h2>Hard skills</h2>
+                <p>Java</p>
+                <p>Spring boot</p>
+                <p>Angular</p>
+                <p>SQL</p>
+                <p>HTML</p>
+                <p>CSS</p>
+            </div>
+        </article>
+        <article class="img-cv  ">
+            <a href="media/misc/CV_CDA_yann_doublet.pdf" download>
+                <img src="media/misc/CV_CDA_yann_doublet.webp" alt="Mon CV" class="CV scale">
+            </a>
+
+            <a href="media/misc/CV_CDA_yann_doublet.pdf" download class="btn btn-primary btn-cv">Télécharger mon CV</a>
+
+        </article>
+        </div>
     </section>
 
     <section id="experience" class="w-100 bg-white p-5 mb-5">
@@ -157,49 +199,11 @@ arrow_downward
         </article>
     </section>
 
-    <section id="skills" class=" w-100 bg-white p-5 mb-5">
-        <h2 class="text-center about-me mb-5">Mes compétences</h2>
-        <div class="d-flex justify-content-around w-75 m-auto">
-
-        <article class="presentation--text">
-            <div class="text-police">
-                <h2 class="mb-3"><u>Compétences transversales</u></h2>
-                <h3 class="ms-3"><u> Conception et modélisation : </u></h3>
-                <div class="ms-5">
-
-                    <p>- Modélisation de base de données (MCD, MLD, MPD), avec Merise.</p>
-                    <p>- Maquettage et prototypage avec Figma ou Adobe XD.</p>
-                    <p>- Wireframe et zoning pour des interfaces utilisateur efficaces.</p>
-                    <p>- Rédaction de cahier des charges et spécifications techniques.</p>
-                </div>
-                <h3 class="ms-3"><u>Gestion de projet</u></h3>
-                <div class="ms-5">
-                    <p>- Utilisation d'outils comme Trello pour suivre les tâches</p>
-                    <p>- Méthodes Agiles pour le développement collaboratif</p>
-                </div>
-                <h2>Hard skills</h2>
-                <p>Java</p>
-                <p>Spring boot</p>
-                <p>Angular</p>
-                <p>SQL</p>
-                <p>HTML</p>
-                <p>CSS</p>
-            </div>
-        </article>
-        <article class="img-cv test">
-            <a href="media/misc/CV_CDA_yann_doublet.pdf" download>
-                <img src="media/misc/CV_CDA_yann_doublet.webp" alt="Mon CV" class="CV scale">
-            </a>
-            <div>
-                <a href="media/misc/CV_CDA_yann_doublet.pdf" download class="">Télécharger mon CV</a>
-            </div>
-        </article>
-        </div>
-    </section>
-
     <!-- Carousel -->
+<section class="w-100 bg-white p-5 mb-5">
 
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade w-75 m-auto" data-bs-ride="carousel">
+
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide carousel-fade w-75 m-auto " data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -293,11 +297,16 @@ arrow_downward
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+</section>
 </main>
 
 <footer>
+    <div class="w-100 bg-white " style="margin-bottom: -30px">
+
     <h2 id="name_footer" class="title-police text-center">Yann Doublet</h2>
-    <img src="" alt="">
+    </div>
+
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
